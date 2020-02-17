@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
-import MainPage from "./components/MainPage";
+// import MainPage from "./Pages/MainPage";
+import ButtonBig from "./Components/ButtonBig";
 
 function App() {
   return (
     <div className="App">
-      <MainPage />
+      {/* <MainPage /> */}
+      <ButtonBig name="more info" />
     </div>
   );
 }

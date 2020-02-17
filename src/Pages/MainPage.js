@@ -1,6 +1,6 @@
 import React from "react";
 import "./MainPage.css";
-import Navbar from "./Navbar";
+import Navbar from "../Components/Navbar";
 
 function MainPage() {
   return (
