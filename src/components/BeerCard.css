@@ -5,6 +5,7 @@
   position: relative;
   height: 70vh;
   width: 70vw;
+  z-index: 0;
 }
 .beercard-leftside {
   height: 70vh;
@@ -18,20 +19,21 @@
   padding-left: 8vw;
 }
 .beercard-title {
-  padding-top: 5vh;
-  padding-bottom: 3vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-size: 3em;
 }
 .beercard-button {
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  margin-right: 30vw;
+  margin-top: 5vh;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 .beercard-description {
-  padding-top: 5vh;
+  margin-top: 5vh;
   display: flex;
   padding-right: 7vw;
-
   flex-wrap: wrap;
 }
 .beercard-img {
@@ -39,11 +41,11 @@
   position: absolute;
   top: 4vh;
   left: 11vw;
+  z-index: 1;
 }
 .beercard-button-moreinfo {
   position: absolute;
-}
-.beercard {
-  display: flex;
-  align-content: center;
+  z-index: 2;
+  left: 30vw;
+  top: 75vh;
 }

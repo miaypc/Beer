@@ -12,16 +12,19 @@ function BeerCard({ img, name, description }) {
           <h1 className="beercard-title"> {name}</h1>
           <div className="beercard-button">
             <Button
+              size="xs"
               color={Colors.mainDark}
               textColor={Colors.mainWhite}
               name="dark"
             />
             <Button
+              size="xs"
               color={Colors.mainDark}
               textColor={Colors.mainWhite}
               name="IPA"
             />
             <Button
+              size="xs"
               color={Colors.mainDark}
               textColor={Colors.mainWhite}
               name="6%"
@@ -31,12 +34,14 @@ function BeerCard({ img, name, description }) {
         </section>
       </div>
       <img className="beercard-img" src={img} alt="beer" />
-      {/* <Button
-        className="beercard-button-moreinfo"
-        color={Colors.mainYellow}
-        textColor={Colors.mainDark}
-        name="More Info"
-      /> */}
+      <div className="beercard-button-moreinfo">
+        <Button
+          size="l"
+          color={Colors.mainYellow}
+          textColor={Colors.mainDark}
+          name="More Info"
+        />
+      </div>
     </div>
   );
 }
