@@ -1,0 +1,13 @@
+.button {
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 1vh 4vw;
+  font-size: 15;
+  border-radius: 25px;
+}
+
+.button:focus {
+  outline: none;
+}
