@@ -1,13 +1,17 @@
 import React from "react";
 import "./App.css";
+import LogoForDarkTheme from "./Components/Logo/logoForDark.svg";
 // import MainPage from "./Pages/MainPage";
-// import ButtonBig from "./Components/ButtonBig";
+import Navbar from "./Components/Navbar.js";
+
 import BeerCard from "./Components/BeerCard";
 import BeerExample from "./Components/Images/BeerExample.png";
+
 
 function App() {
   return (
     <div className="App">
+      <Navbar img={LogoForDarkTheme} />
       {/* <MainPage /> */}
       <BeerCard
         img={BeerExample}
