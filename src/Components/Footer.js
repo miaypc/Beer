@@ -1,9 +1,10 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "./Images/Logo.png";
+import Logo from "../Images/Logo";
 //import Contact from "./Pages/Contact";
 //import About from "./Pages/Terms";
 //import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -11,7 +12,8 @@ function Footer() {
     //  <Router>
     //    <Switch/>
     //   <Route exact path="/Contact" components={Contact} />
-    //   <Route exact path="/Terms" components={Terms}/>
+    //   <Route exact path="/MainPage" components={MainPage} />
+
     // </Router>
     <div>
       <section className="footer-container">
