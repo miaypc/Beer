@@ -1,10 +1,10 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "../Images/Logo";
+import Logo from "./Images/Logo";
+import { Link } from "react-router-dom";
 //import Contact from "./Pages/Contact";
 //import About from "./Pages/Terms";
 //import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-//import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -17,6 +17,9 @@ function Footer() {
     // </Router>
     <div>
       <section className="footer-container">
+        <Link to="/Main">
+          <img src={Logo} alt="Logo" />
+        </Link>
         <img src={Logo} alt="Logo" />
         <h3 className="contact">CONTACT US</h3>
         <h3 className="terms">TERMS AND POLICIES</h3>

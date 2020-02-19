@@ -1,0 +1,36 @@
+.beercard {
+  display: flex;
+  flex-direction: row;
+}
+.beercard-leftside {
+  height: 70vh;
+  width: 20vw;
+  background-color: rgb(242, 183, 5);
+}
+.beercard-rightside {
+  height: 70vh;
+  width: 50vw;
+  background-color: grey;
+  padding-left: 5vw;
+}
+.beercard-title {
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+}
+.beercard-button {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  display: flex;
+
+  flex-direction: row;
+}
+.beercard-description {
+  padding-top: 5vh;
+  display: flex;
+  padding-right: 7vw;
+
+  flex-wrap: wrap;
+}
+.beercard-img {
+  height: 25em;
+}
