@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.css";
+import Logo from "./Images/Logo.png";
 //import Contact from "./Pages/Contact";
 //import About from "./Pages/Terms";
-import Logo from "./Images/Logo.png";
 //import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function Footer() {
