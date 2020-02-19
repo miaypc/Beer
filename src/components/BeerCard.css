@@ -1,17 +1,21 @@
-.beercard {
+.beercard-base {
+  margin-top: 10vh;
   display: flex;
   flex-direction: row;
+  position: relative;
+  height: 70vh;
+  width: 70vw;
 }
 .beercard-leftside {
   height: 70vh;
-  width: 20vw;
+  width: 19vw;
   background-color: rgb(242, 183, 5);
 }
 .beercard-rightside {
   height: 70vh;
   width: 50vw;
-  background-color: grey;
-  padding-left: 5vw;
+  background-color: #ffffff;
+  padding-left: 8vw;
 }
 .beercard-title {
   padding-top: 5vh;
@@ -21,7 +25,6 @@
   padding-top: 2vh;
   padding-bottom: 2vh;
   display: flex;
-
   flex-direction: row;
 }
 .beercard-description {
@@ -32,5 +35,15 @@
   flex-wrap: wrap;
 }
 .beercard-img {
-  height: 25em;
+  height: 30em;
+  position: absolute;
+  top: 4vh;
+  left: 11vw;
+}
+.beercard-button-moreinfo {
+  position: absolute;
+}
+.beercard {
+  display: flex;
+  align-content: center;
 }
