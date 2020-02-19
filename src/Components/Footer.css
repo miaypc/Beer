@@ -1,0 +1,41 @@
+body {
+  background: #f2b705;
+  font-family: Roboto;
+  color: #2d2d2d;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 13px;
+  margin: auto;
+  padding: 5px;
+}
+
+.contact {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.terms {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.footer-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.behere {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+}
