@@ -4,16 +4,16 @@ import Logo from "./Images/Logo.png";
 import { Link } from "react-router-dom";
 //import Contact from "./Pages/Contact";
 //import About from "./Pages/Terms";
-//import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+//import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Footer() {
   return (
     // I imported the Router, but the pages do not exist yet. I will uncomment it when they are ready.
     //  <Router>
-    //    <Switch/>
+    //    <Switch>
+    // <Route exact path="/" components={MainPage} />
     //   <Route exact path="/Contact" components={Contact} />
-    //   <Route exact path="/MainPage" components={MainPage} />
-
+    // </Switch
     // </Router>
     <section className="footer-container">
       <img className="image" src={Logo} alt="Logo" />
