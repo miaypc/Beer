@@ -5,7 +5,7 @@
   color: #2d2d2d;
   background-color: #f2b705;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   line-height: 0.8em;
   padding: 0.3em;
 }
@@ -15,6 +15,7 @@
   width: 8em;
   height: 8em;
   align-self: flex-start;
+  margin: 0em;
 }
 
 .footer-heading {
@@ -23,20 +24,20 @@
   justify-content: space-around;
   font-weight: 300;
   line-height: 0.8em;
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding: 0.3em;
 }
 
 .footer-text {
   font-style: normal;
   font-weight: normal;
-  font-size: 0.7em;
+  font-size: 0.8em;
   line-height: 0.8em;
 }
 
 .behere {
   font-style: normal;
   font-weight: normal;
-  font-size: 0.7em;
+  font-size: 0.8em;
   line-height: 0.8em;
 }
