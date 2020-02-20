@@ -1,0 +1,45 @@
+$mainYellow: #feb614;
+$mainWhite: #ffffff;
+$mainGrey: #f2f2f2;
+$mainDark: #2d2d2d;
+
+.beerofthemonth {
+  height: 100%;
+}
+.beerofthemonth-base {
+  background-color: $mainYellow;
+  position: relative;
+  padding-left: 25%;
+  color: $mainDark;
+  padding-right: 0.6em;
+  height: 80%;
+  margin-top: 8%;
+}
+
+.beerofthemonth-title {
+  font-size: 40px;
+  color: $mainDark;
+  padding-top: 1em;
+}
+.beerofthemonth-description {
+  font-size: 18px;
+  color: $mainDark;
+}
+
+.beerofthemonth-img {
+  height: 85%;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+}
+.beerofthemonth-button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 60%;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.beerofthemonth-button-moreinfo {
+  padding-top: 20em;
+}
