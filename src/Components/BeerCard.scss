@@ -1,0 +1,31 @@
+@import "../utils/colors.scss";
+
+.beercard-container {
+  display: flex;
+}
+.beercard-container-background {
+  display: flex;
+  position: absolute;
+  height: 90vh;
+  align-items: center;
+  z-index: -1;
+}
+.bg-yellow {
+  width: 100vw;
+  background: $mainYellow;
+}
+.bg-white {
+  width: 90vw;
+  left: 10vw;
+  background: $mainGrey;
+}
+
+.beercard-img {
+  height: 500px;
+  margin: 0 2em;
+}
+.beercard-infos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
