@@ -71,9 +71,12 @@ function Navbar({ img }) {
               onClose={handleClose}
             >
               <Switch>
-                <Route path="/home" component={HomePage}>
-                  <MenuItem onClick={handleClose}>Home</MenuItem>
-                </Route>
+                <MenuItem onClick={handleClose}>
+                  <Route path="/home" component={HomePage}>
+                    Home
+                  </Route>
+                </MenuItem>
+
                 <Route path="/orderpage" component={OrderPage}>
                   <MenuItem onClick={handleClose}>
                     <Link href="#" onClick={preventDefault}>
