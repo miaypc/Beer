@@ -1,0 +1,41 @@
+@import "../utils/colors.scss";
+
+.emailus {
+  color: $mainYellow;
+  text-align: left;
+  margin: 1em 8em 2em 3em;
+  padding-top: 2em;
+}
+.emailus-title {
+  font-size: 1.6em;
+}
+.emailus-description {
+  font-size: 0.85em;
+  margin-bottom: 1.5em;
+}
+@media only screen and (min-width: 768px) {
+  .emailus {
+    padding-top: 3em;
+    margin: 2em 13em 4em 3em;
+  }
+  .emailus-title {
+    font-size: 3em;
+  }
+  .emailus-description {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+}
+@media only screen and (min-width: 1179px) {
+  .emailus {
+    padding-top: 5em;
+    margin: 4em 45em 4em 10em;
+  }
+  .emailus-title {
+    font-size: 4em;
+  }
+  .emailus-description {
+    font-size: 1.4em;
+    margin-bottom: 2em;
+  }
+}
