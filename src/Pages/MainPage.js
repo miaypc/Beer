@@ -8,15 +8,14 @@ import MainHeader from "../Components/MainHeader.js";
 function MainPage() {
   const style = {
     backgroundStyle: {
-      backgroundImage: `url(${BackgroundPicture})`
+      backgroundImage: `url(${BackgroundPicture})`,
+      backgroundColor: `#2d2d2d`
     }
   };
   return (
-    <div>
-      <div className="toto" style={style.backgroundStyle}>
-        <Navbar img={LogoForDarkTheme} />
-        <MainHeader />
-      </div>
+    <div style={style.backgroundStyle}>
+      <Navbar img={LogoForDarkTheme} />
+      <MainHeader />
     </div>
   );
 }
