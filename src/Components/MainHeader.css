@@ -1,0 +1,20 @@
+.main-header-style {
+  margin: 0 auto;
+  height: 20em;
+  /* padding-bottom: 2em; */
+  color: #fff;
+  position: relative;
+}
+.find-beer-header {
+  text-align: center;
+  font-size: 3em;
+  padding: 0.5em;
+}
+.beer-of-the-month-text {
+  text-align: right;
+  padding: 0.5em;
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
