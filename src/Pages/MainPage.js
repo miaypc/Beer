@@ -1,33 +1,21 @@
 import React from "react";
 import "./MainPage.css";
 import Navbar from "../Components/Navbar";
+import BackgroundPicture from "../Components/Images/Group.svg";
+import LogoForDarkTheme from "../Components/Logo/logoForDark.svg";
+import MainHeader from "../Components/MainHeader.js";
 
 function MainPage() {
+  const style = {
+    backgroundStyle: {
+      backgroundImage: `url(${BackgroundPicture})`,
+      backgroundColor: `#2d2d2d`
+    }
+  };
   return (
-    <div>
-      <Navbar />
-      <section>
-        <h1>Find the perfect Beer.</h1>
-        <button>Start now</button>
-      </section>
-      <section>
-        <h2>Beer of the Month</h2>
-        <div>
-          <div>
-            <img />
-          </div>
-          <h3>Imperial Black Belgian Ale</h3>
-          <ul>
-            <li>frtty</li>
-            <li></li>
-            <li></li>
-          </ul>
-          <div>
-            <p>Lorem ipsum </p>
-          </div>
-          <button>Order</button>
-        </div>
-      </section>
+    <div style={style.backgroundStyle}>
+      <Navbar img={LogoForDarkTheme} />
+      <MainHeader />
     </div>
   );
 }

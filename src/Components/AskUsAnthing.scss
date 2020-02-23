@@ -1,0 +1,42 @@
+@import "../utils/colors.scss";
+
+.askusanthing {
+  color: $mainYellow;
+  text-align: left;
+  margin: 2em 4em 3em 4em;
+  padding-top: 1em;
+}
+
+.askusanthing-title {
+  font-size: 2.5em;
+}
+.askusanthing-description {
+  font-size: 1.2em;
+}
+@media only screen and (min-width: 768px) {
+  .askusanthing {
+    padding-top: 5em;
+    margin: 4em 8em 4em 11em;
+  }
+  .askusanthing-title {
+    font-size: 4em;
+    margin-right: 2em;
+  }
+  .askusanthing-description {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 1179px) {
+  .askusanthing {
+    padding-top: 2em;
+    margin: 4em 12em 4em 20em;
+  }
+  .askusanthing-title {
+    font-size: 6em;
+    margin-right: 4em;
+  }
+  .askusanthing-description {
+    margin-right: 4em;
+    font-size: 2em;
+  }
+}
