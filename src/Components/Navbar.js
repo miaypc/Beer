@@ -10,6 +10,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import { Link } from "react-router-dom";
 import LogoForDarkTheme from "./Logo/logoForDark.svg";
 import LogoForLightTheme from "./Logo/logoForLight.svg";
+import "./Navbar.scss";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -45,11 +46,13 @@ function Navbar({ theme = "light" }) {
   const menuButtonColor = theme === "light" ? "default" : "inherit";
 
   return (
-    <div className={classes.root}>
+    <div className="navbar">
       <AppBar position="static" className={classes.navBackgroundColorWhite}>
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            <img src={img} alt="img" />
+            <Link to="/">
+              <img src={img} alt="img" />
+            </Link>
           </Typography>
           <IconButton
             edge="start"
@@ -69,16 +72,20 @@ function Navbar({ theme = "light" }) {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <MenuItem>
-              <Link to="/" onClick={handleClose}>
+            <MenuItem className="menu-item">
+              <Link to="/" onClick={handleClose} className="menu-link">
                 Home
               </Link>
             </MenuItem>
-            <MenuItem onClick={handleClose}>
-              <Link to="/order">Order Page</Link>
+            <MenuItem onClick={handleClose} className="menu-item">
+              <Link to="/order" className="menu-link">
+                Order Page
+              </Link>
             </MenuItem>
-            <MenuItem onClick={handleClose}>
-              <Link to="/contact-us">Contact us</Link>
+            <MenuItem onClick={handleClose} className="menu-item">
+              <Link to="/contact-us" className="menu-link">
+                Contact us
+              </Link>
             </MenuItem>
           </Menu>
         </Toolbar>
