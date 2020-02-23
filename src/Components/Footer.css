@@ -1,0 +1,47 @@
+.footer-container {
+  height: 10em;
+  font-family: Roboto;
+  color: #2d2d2d;
+  background-color: #f2b705;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 0.8em;
+  padding: 0.3em;
+}
+
+.image {
+  float: left;
+  width: 8em;
+  height: 8em;
+  align-self: flex-start;
+  margin: 0em;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 300;
+  font-size: 0.8em;
+  padding: 0.3em;
+}
+
+.footer-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.behere {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.footer-link {
+  display: block;
+  text-decoration: none;
+  color: #2d2d2d;
+  font-weight: bold;
+  margin: 1em;
+}
