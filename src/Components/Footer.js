@@ -2,25 +2,20 @@ import React from "react";
 import "./Footer.css";
 import Logo from "./Images/Logo.png";
 import { Link } from "react-router-dom";
-//import Contact from "./Pages/Contact";
-//import About from "./Pages/Terms";
-//import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Footer() {
   return (
-    // I imported the Router, but the pages do not exist yet. I will uncomment it when they are ready.
-    //  <Router>
-    //    <Switch>
-    // <Route exact path="/" components={MainPage} />
-    //   <Route exact path="/Contact" components={Contact} />
-    // </Switch
-    // </Router>
     <section className="footer-container">
       <img className="image" src={Logo} alt="Logo" />
       <div>
         <div className="footer-heading">
-          <h3 className="contact">CONTACT US</h3>
-          <h3 className="terms">TERMS AND POLICIES</h3>
+          <Link to="/contact-us" className="contact footer-link">
+            CONTACT US
+          </Link>
+          {/* <h3>Hello</h3> */}
+          <Link to="/" className="terms footer-link">
+            TERMS AND POLICIES
+          </Link>
         </div>
         <div className="footer-text">
           BEHERE supports the responsible service of alcohol. It is against the
