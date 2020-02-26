@@ -14,7 +14,6 @@
   justify-content: flex-end;
   background-color: $mainDark;
   color: $mainWhite;
-  width: 80%;
   height: 3em;
   padding-left: 4em;
   padding-right: 2em;
@@ -25,4 +24,5 @@
   color: $mainGrey;
   display: flex;
   position: relative;
+  float: right;
 }

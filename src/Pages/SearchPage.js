@@ -16,7 +16,7 @@ const SearchPage = () => {
   }, [query]);
 
   const getBeers = async () => {
-    const response = await fetch(`https://api.punkapi.com/v2/beers?page=4&per_page=3 `)
+    const response = await fetch(`https://api.punkapi.com/v2/beers?page=5&per_page=3 `)
       .then(response => response.json())
       .then(data => {
         setBeers(data)
