@@ -20,6 +20,11 @@ const Button = ({ name, color, textColor, size }) => {
       fontSize: "1.2em"
     },
     l: {
+      padding: "0.2em 1.4em",
+      fontSize: "1.6em"
+    },
+
+    xl: {
       padding: "0.2em 1.5em",
       fontSize: "2em"
     }
