@@ -1,0 +1,19 @@
+.tipsCard {
+  color: white;
+  padding: 1em;
+  background-image: url("./Images/tipsBackground.svg");
+  background-size: cover;
+  min-height: 175px;
+  .tipText {
+    text-align: center;
+  }
+  .alignTextCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+  }
+  h3 {
+    margin: 0 10px;
+  }
+}
