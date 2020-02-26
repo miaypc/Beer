@@ -22,7 +22,14 @@
 }
 .fas {
   color: $mainGrey;
-  display: flex;
   position: relative;
+  font-size: medium;
   float: right;
+  background-color: $mainDark;
+}
+
+button {
+  background-color: $mainDark;
+  border-style: none;
+  padding: 0.5em 1em;
 }
