@@ -1,0 +1,28 @@
+@import "../utils/colors.scss";
+
+.searchbar-container {
+  display: flex;
+  flex-grow: 1;
+  height: 5em;
+  flex-direction: column;
+  background-color: $mainDark;
+  justify-content: flex-start;
+}
+
+.input {
+  display: flex;
+  justify-content: flex-end;
+  background-color: $mainDark;
+  color: $mainWhite;
+  width: 80%;
+  height: 3em;
+  padding-left: 4em;
+  padding-right: 2em;
+  padding-top: 2em;
+  border-style: none;
+}
+.fas {
+  color: $mainGrey;
+  display: flex;
+  position: relative;
+}
