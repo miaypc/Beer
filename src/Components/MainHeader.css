@@ -7,14 +7,18 @@
 }
 .find-beer-header {
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   padding: 0.5em;
 }
 .beer-of-the-month-text {
-  text-align: right;
+  text-align: center;
   padding: 0.5em;
   font-size: 1.5em;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.main-header-button {
+  text-align: center;
+  margin-top: 2em;
 }
