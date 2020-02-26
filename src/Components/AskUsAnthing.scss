@@ -13,7 +13,7 @@
 .askusanthing-description {
   font-size: 1.2em;
 }
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .askusanthing {
     padding-top: 5em;
     margin: 4em 8em 4em 11em;
@@ -26,7 +26,7 @@
     font-size: 2em;
   }
 }
-@media only screen and (min-width: 1179px) {
+@media (min-width: 1179px) {
   .askusanthing {
     padding-top: 2em;
     margin: 4em 12em 4em 20em;
