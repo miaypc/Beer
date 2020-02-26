@@ -12,7 +12,7 @@
   float: left;
   width: 8em;
   height: 8em;
-  align-self: flex-start;
+  align-self: center;
   margin: 0em;
 }
 
@@ -28,7 +28,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 0.8em;
-  padding: 0.8em;
 }
 
 .behere {
@@ -43,4 +42,16 @@
   color: #2d2d2d;
   font-weight: bold;
   margin: 1em;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    padding: 1.2em;
+  }
+  .footer-text {
+    padding: 1em 6em 2em 6em;
+  }
+  .footer-heading {
+    padding: 0.5em;
+  }
 }
