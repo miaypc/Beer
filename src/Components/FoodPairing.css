@@ -36,6 +36,9 @@
 }
 
 @media only screen and (min-width: 700px) {
+  .foodCard {
+    margin: 1em 3em;
+  }
   .foodImageItem div {
     font-size: 1.2em;
     padding: 0 10px;
@@ -71,7 +74,6 @@
 @media only screen and (max-width: 250px) {
   .foodImagesContainer {
     display: flex;
-    width: 100%;
     flex-direction: column;
   }
   .foodImageItem {
