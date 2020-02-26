@@ -5,7 +5,6 @@
   background-color: #f2b705;
   display: flex;
   justify-content: flex-start;
-  line-height: 0.8em;
   padding: 0.3em;
 }
 
@@ -13,7 +12,7 @@
   float: left;
   width: 8em;
   height: 8em;
-  align-self: flex-start;
+  align-self: center;
   margin: 0em;
 }
 
@@ -23,7 +22,6 @@
   justify-content: space-around;
   font-weight: 300;
   font-size: 0.8em;
-  padding: 0.3em;
 }
 
 .footer-text {
@@ -44,4 +42,16 @@
   color: #2d2d2d;
   font-weight: bold;
   margin: 1em;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    padding: 1.2em;
+  }
+  .footer-text {
+    padding: 1em 6em 2em 6em;
+  }
+  .footer-heading {
+    padding: 0.5em;
+  }
 }
