@@ -1,5 +1,5 @@
 .foodCardContainer {
-  margin-top: 8em;
+  margin-top: 3em;
 }
 
 .h3text {
@@ -53,6 +53,9 @@
   .foodImageItem {
     padding: 2em;
   }
+  .foodCardContainer {
+    margin-top: 5em;
+  }
 }
 @media only screen and (min-width: 350px) and (max-width: 500px) {
   .foodImageItem {
@@ -62,6 +65,9 @@
     font-size: 0.7em;
     left: 5px;
     right: 5px;
+  }
+  .foodCardContainer {
+    margin-top: 3em;
   }
 }
 @media only screen and (max-width: 350px) {
