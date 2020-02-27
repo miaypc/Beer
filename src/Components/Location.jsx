@@ -8,7 +8,6 @@ function Location() {
   return (
     <div className="location">
       <img className="location-img" src={Map} alt="map" />
-
       <div className="location-rightside">
         <h1 className="location-title"> Location</h1>
         <p className="location-description">

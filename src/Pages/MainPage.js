@@ -4,7 +4,6 @@ import Navbar from "../Components/Navbar";
 import MainHeader from "../Components/MainHeader.js";
 import BeerOfTheMonth from "../Components/BeerOfTheMonth";
 import BeerExample from "../Components/Images/BeerExample.png";
-
 import styled, { keyframes } from "styled-components";
 import { bounceInDown, bounceInLeft, bounceInRight } from "react-animations";
 
@@ -25,6 +24,7 @@ const BounceInRrightDiv = styled.div`
 function MainPage() {
   return (
     <div className="main-page-container">
+
       <BounceInDownDiv>
         <Navbar theme="dark" />
       </BounceInDownDiv>
