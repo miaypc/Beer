@@ -1,42 +1,25 @@
 @import "../utils/colors.scss";
 
-.askusanthing {
+.ask-us-anthing {
   color: $mainYellow;
   text-align: left;
-  margin: 2em 4em 3em 4em;
-  padding-top: 1em;
+  margin: 10vh 8vw;
 }
 
-.askusanthing-title {
+.ask-us-anthing-title {
   font-size: 2.5em;
 }
-.askusanthing-description {
+.ask-us-anthing-description {
   font-size: 1.2em;
 }
 @media (min-width: 768px) {
-  .askusanthing {
-    padding-top: 5em;
-    margin: 4em 8em 4em 11em;
+  .ask-us-anthing {
+    margin: 5em 8em 8em 12em;
   }
-  .askusanthing-title {
-    font-size: 4em;
-    margin-right: 2em;
+  .ask-us-anthing-title {
+    font-size: 3em;
   }
-  .askusanthing-description {
-    font-size: 2em;
-  }
-}
-@media (min-width: 1179px) {
-  .askusanthing {
-    padding-top: 2em;
-    margin: 4em 12em 4em 20em;
-  }
-  .askusanthing-title {
-    font-size: 6em;
-    margin-right: 4em;
-  }
-  .askusanthing-description {
-    margin-right: 4em;
-    font-size: 2em;
+  .ask-us-anthing-description {
+    font-size: 1.5em;
   }
 }
