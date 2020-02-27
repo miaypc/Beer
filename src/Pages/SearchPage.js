@@ -3,6 +3,7 @@ import SearchBar from "../Components/SearchBar";
 import BeerCard from "../Components/BeerCard";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 import "./SearchPage.scss";
 
 const SearchPage = () => {
@@ -31,7 +32,11 @@ const SearchPage = () => {
     const response = await fetch(`https://api.punkapi.com/v2/beers `)
       .then(response => response.json())
       .then(data => {
-        setBeers(data);
+        setBeers(
+          data.filter(
+            item => item.image_url !== "https://images.punkapi.com/v2/keg.png"
+          )
+        );
       })
       .then(setLoading(false));
   };
@@ -53,11 +58,13 @@ const SearchPage = () => {
           <h1>Loading ...</h1>
         ) : (
           filteredBeers.map(beer => (
-            <BeerCard
-              name={beer.name}
-              img={beer.image_url}
-              description={beer.description}
-            />
+            <Link to={`/beers/${beer.id}`}>
+              <BeerCard
+                name={beer.name}
+                img={beer.image_url}
+                description={beer.description}
+              />{" "}
+            </Link>
           ))
         )}
       </div>
