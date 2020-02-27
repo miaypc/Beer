@@ -6,7 +6,8 @@ export default function SearchBar({ search, onSearch }) {
     <div>
       <section className="searchbar-container">
         <input className="input" type="text" placeholder="Type something" value={search} onChange={onSearch} />
-        <button onClick={onSearch}><i class="fas fa-search"></i></button>
+        <i id="icon" class="fa fa-search"></i>
+
       </section>
     </div>
   );
