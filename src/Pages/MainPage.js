@@ -13,13 +13,13 @@ const bounceInLeftAnimation = keyframes`${bounceInLeft}`;
 const bounceInRightAnimation = keyframes`${bounceInRight}`;
 
 const BounceInDownDiv = styled.div`
-  animation: 5s ${bounceInDownAnimation};
+  animation: 2.5s ${bounceInDownAnimation};
 `;
 const BounceInLeftDiv = styled.div`
-  animation: 5s ${bounceInLeftAnimation};
+  animation: 1.5s ${bounceInLeftAnimation};
 `;
 const BounceInRrightDiv = styled.div`
-  animation: 5s ${bounceInRightAnimation};
+  animation: 2s ${bounceInRightAnimation};
 `;
 
 function MainPage() {
