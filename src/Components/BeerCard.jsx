@@ -6,15 +6,13 @@ import Colors from "../utils/Colors";
 function BeerCard({ img, name, description }) {
   return (
     <div className="beercard-container">
-      <div className="beercard-container-background bg-yellow"></div>
-      <div className="beercard-container-background bg-white"></div>
-
-      <img className="beercard-img" src={img} alt="beer" />
-      <div className="beercard-infos-container">
-        {/* <section className="beercard-leftside"></section>
-        <section className="beercard-rightside"> */}
+      <div className="beercard-left">
+        <img className="beercard-img" src={img} alt="beer" />
+      </div>
+      <div className="beercard-right">
         <h1 className="beercard-title">{name}</h1>
-        <div className="beercard-buttons-container">
+
+        <div className="beercard-buttons">
           <Button
             size="xs"
             color={Colors.mainDark}
@@ -35,17 +33,15 @@ function BeerCard({ img, name, description }) {
           />
         </div>
         <p className="beercard-description">{description}</p>
-        {/* </section> */}
+        <div className="beercard-button-moreinfo">
+          <Button
+            size="l"
+            color={Colors.mainYellow}
+            textColor={Colors.mainDark}
+            name="More Info"
+          />
+        </div>
       </div>
-
-      {/* <div className="beercard-button-moreinfo">
-        <Button
-          size="l"
-          color={Colors.mainYellow}
-          textColor={Colors.mainDark}
-          name="More Info"
-        />
-      </div>  */}
     </div>
   );
 }
