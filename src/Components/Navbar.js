@@ -78,6 +78,11 @@ function Navbar({ theme = "light" }) {
               </Link>
             </MenuItem>
             <MenuItem onClick={handleClose} className="menu-item">
+              <Link to="/search" className="menu-link">
+                Search
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose} className="menu-item">
               <Link to="/order" className="menu-link">
                 Order Page
               </Link>
