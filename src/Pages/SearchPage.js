@@ -19,7 +19,7 @@ const SearchPage = () => {
 
   useEffect(() => {
     setFilteredBeers(search === '' ? beers.slice(0, 3) : beers.filter((beer) => {
-      return beer.name.toLowerCase().includes(search)
+      return beer.description.toLowerCase().includes(search)
     }));
   }, [search, beers]);
 
