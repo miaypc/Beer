@@ -5,7 +5,8 @@ const Button = ({ name, color, textColor, size }) => {
   const styles = {
     button: {
       backgroundColor: color,
-      color: textColor
+      color: textColor,
+      cursor: "pointer"
     },
     xs: {
       padding: "0.1em 0.8em",

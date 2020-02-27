@@ -12,12 +12,14 @@ function EmailUs() {
         get back to you asap. Usually within the hour on weekdays, but we’ll
         also try our best on the weekend.
       </p>
-      <Button
-        size="m"
-        color={Colors.mainYellow}
-        textColor={Colors.mainDark}
-        name="me@behere.com"
-      />
+      <a href="mailto:me@behere.com?subject=SendMail&body=Description">
+        <Button
+          size="m"
+          color={Colors.mainYellow}
+          textColor={Colors.mainDark}
+          name="me@behere.com"
+        />
+      </a>
     </div>
   );
 }
