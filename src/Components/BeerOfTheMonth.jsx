@@ -2,6 +2,7 @@ import React from "react";
 import "./BeerOfTheMonth.scss";
 import Button from "./Button";
 import Colors from "../utils/Colors";
+import { Link } from "react-router-dom";
 
 function BeerOfTheMonth({ img, name, description }) {
   return (
@@ -34,12 +35,17 @@ function BeerOfTheMonth({ img, name, description }) {
           <p className="beer-of-the-month-description">{description}</p>
         </div>
         <div className="beer-of-the-month-button-moreinfo">
-          <Button
-            size="l"
-            color={Colors.mainDark}
-            textColor={Colors.mainGrey}
-            name="More Info"
-          />
+          <Link
+            to="/beers/17"
+            style={{ textDecoration: "none", color: "#2d2d2d" }}
+          >
+            <Button
+              size="l"
+              color={Colors.mainDark}
+              textColor={Colors.mainGrey}
+              name="More Info"
+            />
+          </Link>
         </div>
       </div>
       <p className="beer-of-the-month-allrights">
