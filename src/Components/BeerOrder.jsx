@@ -12,15 +12,6 @@ function BeerOrder({ img, name, description, abv, ibu, srm }) {
       <div className="beer-order-right">
         <h1 className="beer-order-title"> {name}</h1>
         <div className="beer-order-button">
-          <div className="beer-order-button-abv">
-            <Button
-              size="s"
-              color={Colors.mainYellow}
-              textColor={Colors.mainDark}
-              name="ABV"
-            />
-            <p>{abv}</p>
-          </div>
           <div className="beer-order-button-ibu">
             <Button
               size="s"
@@ -38,6 +29,15 @@ function BeerOrder({ img, name, description, abv, ibu, srm }) {
               name="SRM"
             />
             <p>{srm}</p>
+          </div>
+          <div className="beer-order-button-abv">
+            <Button
+              size="s"
+              color={Colors.mainYellow}
+              textColor={Colors.mainDark}
+              name="ABV"
+            />
+            <p>{abv}%</p>
           </div>
         </div>
         <p className="beer-order-description">{description}</p>
