@@ -1,5 +1,4 @@
 @import "../utils/colors.scss";
-
 .searchbar-container {
   display: flex;
   flex-grow: 1;
@@ -8,6 +7,7 @@
   background-color: $mainDark;
   justify-content: flex-start;
   align-items: center;
+  margin: 0 auto;
 }
 
 .input {
@@ -15,25 +15,21 @@
   justify-content: flex-end;
   background-color: $mainDark;
   color: $mainWhite;
+  height: 3em;
   padding-left: 4em;
-  padding-right: 2em;
-  padding-top: 2em;
   border-style: none;
   width: 70%;
 }
+
 #icon {
   color: $mainGrey;
-  position: relative;
-  font-size: medium;
   float: right;
   background-color: $mainDark;
+  margin: 0 auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .input {
     width: 80%;
-  }
-  #icon {
-    padding-left: 4em;
   }
 }
