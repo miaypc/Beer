@@ -82,11 +82,11 @@ function Navbar({ theme = "light" }) {
                 Search
               </Link>
             </MenuItem>
-            <MenuItem onClick={handleClose} className="menu-item">
+            {/* <MenuItem onClick={handleClose} className="menu-item">
               <Link to="/order" className="menu-link">
                 Order Page
               </Link>
-            </MenuItem>
+            </MenuItem> */}
             <MenuItem onClick={handleClose} className="menu-item">
               <Link to="/contact-us" className="menu-link">
                 Contact us
