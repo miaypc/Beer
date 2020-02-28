@@ -48,12 +48,6 @@ function MainPage() {
           description="A widely available, sessionable craft beer style that showcases both malt and hops. Amber lagers are a medium-bodied lager with a toasty or caramel-like malt character."
         />
       </BounceInRrightDiv>
-
-      {/* <BounceInUpDiv>
-        <div className="main-page-footer">
-          <Footer />
-        </div>
-      </BounceInUpDiv> */}
     </div>
   );
 }
