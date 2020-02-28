@@ -3,7 +3,7 @@ import "./BeerCard.scss";
 import Button from "./Button";
 import Colors from "../utils/Colors";
 
-function BeerCard({ img, name, description }) {
+function BeerCard({ img, name, description, abv, srm, ibu }) {
   return (
     <div className="beercard-container">
       <div className="beercard-left">
@@ -17,19 +17,19 @@ function BeerCard({ img, name, description }) {
             size="xs"
             color={Colors.mainDark}
             textColor={Colors.mainWhite}
-            name="dark"
+            name={`ibu ${ibu}`}
           />
           <Button
             size="xs"
             color={Colors.mainDark}
             textColor={Colors.mainWhite}
-            name="IPA"
+            name={srm}
           />
           <Button
             size="xs"
             color={Colors.mainDark}
             textColor={Colors.mainWhite}
-            name="6%"
+            name={`${abv}%`}
           />
         </div>
         <p className="beercard-description">{description}</p>

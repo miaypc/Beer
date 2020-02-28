@@ -63,7 +63,10 @@ const SearchPage = () => {
                 name={beer.name}
                 img={beer.image_url}
                 description={beer.description}
-              />{" "}
+                abv={beer.abv}
+                srm={beer.srm}
+                ibu={beer.ibu}
+              />
             </Link>
           ))
         )}
