@@ -4,6 +4,12 @@ import Logo from "./Images/Logo.png";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  // const styles={
+  //   footer:{
+  //     backgroundColor:color,
+  //     color: textcolor,
+  //   },
+  // }
   return (
     <section className="footer-container">
       <img className="image" src={Logo} alt="Logo" />
@@ -12,7 +18,6 @@ function Footer() {
           <Link to="/contact-us" className="contact footer-link">
             CONTACT US
           </Link>
-          {/* <h3>Hello</h3> */}
           <Link to="/" className="terms footer-link">
             TERMS AND POLICIES
           </Link>

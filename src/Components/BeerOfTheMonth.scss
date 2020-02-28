@@ -4,14 +4,15 @@
   width: 100%;
   height: 30em;
   margin-top: 10em;
-  display: flex;
+  // display: flex;
   margin-bottom: 0;
 }
 .beer-of-the-month-base {
   width: 100%;
   height: 100%;
-  background: $mainYellow;
   position: relative;
+  background: $mainYellow;
+  color: $mainDark;
 }
 .beer-of-the-month-img {
   align-self: center;
@@ -25,7 +26,6 @@
   margin-right: 5%;
 }
 .beer-of-the-month-title {
-  color: $mainDark;
   font-size: 40px;
   margin-top: 1.5em;
   margin-bottom: 1em;
@@ -39,11 +39,16 @@
 .beer-of-the-month-description {
   font-size: 20px;
   margin-bottom: 6em;
-  height: 100px;
-  overflow: scroll;
 }
 .beer-of-the-month-button-moreinfo {
   margin-left: 50%;
+}
+.beer-of-the-month-allrights {
+  color: $mainDark;
+  text-align: center;
+  background: $mainYellow;
+  padding-bottom: 10px;
+  margin-top: 0;
 }
 @media only screen and (min-width: 990px) {
   .beer-of-the-month-button-moreinfo {
@@ -126,9 +131,9 @@
 }
 
 @media screen and (max-width: 349px) {
-  // .beer-of-the-month-container {
-  //   height: 27em;
-  // }
+  .beer-of-the-month-container {
+    height: 29em;
+  }
   .beer-of-the-month-img {
     height: 90%;
   }
@@ -149,6 +154,7 @@
   .beer-of-the-month-description {
     font-size: 13px;
     margin-top: 3em;
+    margin-bottom: 5em;
   }
   .beer-of-the-month-button-moreinfo {
     margin: auto;

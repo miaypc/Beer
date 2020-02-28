@@ -42,6 +42,9 @@ function BeerOfTheMonth({ img, name, description }) {
           />
         </div>
       </div>
+      <p className="beer-of-the-month-allrights">
+        © BEHERE. All rights reserved.
+      </p>
     </div>
   );
 }
