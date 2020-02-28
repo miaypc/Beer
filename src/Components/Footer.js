@@ -20,8 +20,7 @@ function Footer() {
         <div className="footer-text">
           BEHERE supports the responsible service of alcohol. It is against the
           law to sell or supply alcohol to, or obtain alcohol on behalf of, a
-          person under the age of 18 years.
-          License number LIQP14124234.
+          person under the age of 18 years. License number LIQP14124234.
           <p className="behere">© BEHERE. All rights reserved.</p>
         </div>
       </div>
