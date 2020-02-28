@@ -7,6 +7,7 @@
   display: flex;
   margin: auto;
 }
+
 .beercard-left {
   display: flex;
   background: $mainYellow;
@@ -28,6 +29,8 @@
   }
   p {
     margin-bottom: 1.5em;
+    height: 200px;
+    overflow: scroll;
   }
 }
 .beercard-img {
@@ -46,6 +49,7 @@
 .beercard-button-moreinfo {
   align-self: flex-end;
 }
+
 @media screen and(min-width: 1027px) {
   .beercard-description {
     margin-bottom: 2.5em;

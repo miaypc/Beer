@@ -58,7 +58,10 @@ const SearchPage = () => {
           <h1>Loading ...</h1>
         ) : (
           filteredBeers.map(beer => (
-            <Link to={`/beers/${beer.id}`}>
+            <Link
+              to={`/beers/${beer.id}`}
+              style={{ textDecoration: "none", color: "#2d2d2d" }}
+            >
               <BeerCard
                 name={beer.name}
                 img={beer.image_url}
