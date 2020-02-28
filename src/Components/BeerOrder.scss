@@ -1,0 +1,129 @@
+@import "../utils/colors.scss";
+
+.beer-order-container {
+  position: relative;
+  width: 100%;
+  height: 40em;
+  display: flex;
+}
+
+.beer-order-left {
+  width: 20%;
+  height: 95%;
+  background: $mainYellow;
+  position: relative;
+  display: flex;
+}
+
+.beer-order-img {
+  height: 100%;
+  left: 11%;
+  top: 8%;
+  position: absolute;
+}
+.beer-order-right {
+  padding-left: 8em;
+  background: $mainDark;
+  width: 80%;
+}
+.beer-order-title {
+  color: $mainYellow;
+  font-size: 45px;
+  margin-top: 0;
+  margin-right: 7em;
+}
+.beer-order-button {
+  margin-left: 5em;
+  margin-top: 3em;
+  .beer-order-button-abv,
+  .beer-order-button-ibu,
+  .beer-order-button-srm {
+    display: flex;
+    margin-bottom: 1.5em;
+  }
+  p {
+    color: $mainGrey;
+    margin: 0 0 0 2em;
+  }
+}
+.beer-order-description {
+  color: $mainGrey;
+  font-size: 23px;
+  margin: 2em 5em 2em 0;
+}
+.beer-order-button-moreinfo {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 900px) and (min-width: 616px) {
+  .beer-order-container {
+    height: 27em;
+  }
+  .beer-order-img {
+    height: 95%;
+    left: 10%;
+  }
+  .beer-order-title {
+    font-size: 28px;
+    margin-right: 2em;
+  }
+  .beer-order-button {
+    margin-left: 2em;
+    margin-top: 2em;
+    .beer-order-button-abv,
+    .beer-order-button-ibu,
+    .beer-order-button-srm {
+      font-size: 0.8em;
+      margin-bottom: 1em;
+    }
+  }
+  .beer-order-description {
+    font-size: 15px;
+    margin: 2em 2em 0 0;
+  }
+  .beer-order-button-moreinfo {
+    margin-top: 4em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .beer-order-container {
+    height: 25em;
+  }
+  .beer-order-right {
+    padding-left: 5em;
+  }
+
+  .beer-order-img {
+    height: 90%;
+    left: 8%;
+  }
+  .beer-order-title {
+    font-size: 25px;
+    margin-right: 0em;
+  }
+  .beer-order-description {
+    font-size: 13px;
+    margin: 1em 2em 0 0;
+    height: 200px;
+    overflow: scroll;
+  }
+
+  .beer-order-button {
+    margin-left: 2em;
+    margin-top: 1em;
+    .beer-order-button-abv,
+    .beer-order-button-ibu,
+    .beer-order-button-srm {
+      font-size: 0.8em;
+      margin-bottom: 1em;
+    }
+  }
+  .beer-order-button-moreinfo {
+    margin-top: 2em;
+    font-size: 0.8em;
+  }
+}

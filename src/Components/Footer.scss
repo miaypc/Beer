@@ -1,0 +1,56 @@
+.footer-container {
+  font-family: Roboto;
+  color: #2d2d2d;
+  background-color: #f2b705;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.3em;
+}
+
+.image {
+  float: left;
+  width: 8em;
+  height: 8em;
+  align-self: center;
+  margin: 0em;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.footer-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.behere {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.footer-link {
+  display: block;
+  text-decoration: none;
+  color: #2d2d2d;
+  font-weight: bold;
+  margin: 1em;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    padding: 1.2em;
+  }
+  .footer-text {
+    padding: 1em 6em 2em 6em;
+  }
+  .footer-heading {
+    padding: 0.5em;
+  }
+}

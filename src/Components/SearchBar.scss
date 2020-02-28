@@ -1,0 +1,35 @@
+@import "../utils/colors.scss";
+.searchbar-container {
+  display: flex;
+  flex-grow: 1;
+  height: 5em;
+  flex-direction: row;
+  background-color: $mainDark;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.input {
+  display: flex;
+  justify-content: flex-end;
+  background-color: $mainDark;
+  color: $mainWhite;
+  height: 3em;
+  padding-left: 4em;
+  border-style: none;
+  width: 70%;
+}
+
+#icon {
+  color: $mainGrey;
+  float: right;
+  background-color: $mainDark;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .input {
+    width: 80%;
+  }
+}

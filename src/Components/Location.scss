@@ -1,0 +1,48 @@
+@import "../utils/colors.scss";
+
+.location {
+  color: $mainYellow;
+  margin: 20vh 10vw 30vh 10vw;
+  display: flex;
+  align-items: center;
+}
+
+.location-img {
+  height: 120px;
+  border-radius: 25px;
+}
+
+.location-rightside {
+  padding-left: 2vw;
+}
+.location-title {
+  font-size: 1.6em;
+}
+.location-description {
+  font-size: 0.85em;
+  margin-bottom: 5vh;
+}
+
+@media screen and (min-width: 768px) {
+  .location-rightside {
+    padding-left: 4vw;
+  }
+  .location-img {
+    height: 200px;
+  }
+  .location-title {
+    font-size: 2.5em;
+  }
+  .location-description {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .location {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .location-img {
+    margin-bottom: 2em;
+  }
+}

@@ -1,0 +1,10 @@
+.button {
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+}
+.button:focus {
+  outline: none;
+}

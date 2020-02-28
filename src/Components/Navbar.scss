@@ -1,0 +1,17 @@
+@import "../utils/colors.scss";
+
+.navbar {
+  flex-grow: 1;
+}
+#simple-menu {
+  .menu-link {
+    display: block;
+    text-decoration: none;
+    color: $mainDark;
+  }
+  .menu-item {
+    &:hover {
+      background-color: $mainYellow;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import "../utils/colors.scss";
+
+.beercard-container {
+  width: 70vw;
+  align-items: center;
+  height: 35em;
+  display: flex;
+  margin: auto;
+}
+
+.beercard-left {
+  display: flex;
+  background: $mainYellow;
+  width: 20%;
+  height: 80%;
+  z-index: 1;
+}
+.beercard-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $mainGrey;
+  width: 80%;
+  height: 67%;
+  padding: 0 2.8em 0.4em 6em;
+  h1 {
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+  }
+  p {
+    margin-bottom: 1.5em;
+    height: 200px;
+    overflow: scroll;
+  }
+}
+.beercard-img {
+  align-self: center;
+  height: 120%;
+  margin: 0 45%;
+}
+.beercard-buttons {
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+  button {
+    margin-left: 1em;
+  }
+}
+
+.beercard-button-moreinfo {
+  align-self: flex-end;
+}
+
+@media screen and(min-width: 1027px) {
+  .beercard-description {
+    margin-bottom: 2.5em;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .beercard-container {
+    width: 75vw;
+    height: 20em;
+    margin: auto;
+  }
+
+  .beercard-img {
+    height: 95%;
+  }
+  .beercard-right {
+    padding: 0.2em 0.4em 0.4em 2.5em;
+  }
+  .beercard-title {
+    font-size: 14px;
+  }
+  .beercard-description {
+    font-size: 9px;
+    padding: 0;
+  }
+  .beercard-buttons {
+    .button {
+      margin-left: 0.3em;
+    }
+  }
+  .beercard-button-moreinfo {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 677px) and (min-width: 550px) {
+  .beercard-img {
+    height: 105%;
+  }
+}

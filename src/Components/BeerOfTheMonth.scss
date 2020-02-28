@@ -1,0 +1,163 @@
+@import "../utils/colors.scss";
+
+.beer-of-the-month-container {
+  width: 100%;
+  height: 30em;
+  margin-top: 10em;
+  // display: flex;
+  margin-bottom: 0;
+}
+.beer-of-the-month-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: $mainYellow;
+  color: $mainDark;
+}
+.beer-of-the-month-img {
+  align-self: center;
+  height: 120%;
+  left: 7%;
+  top: -20%;
+  position: absolute;
+}
+.beer-of-the-month-right {
+  margin-left: 30%;
+  margin-right: 5%;
+}
+.beer-of-the-month-title {
+  font-size: 40px;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+.beer-of-the-month-button {
+  margin-bottom: 2em;
+  .button {
+    margin-left: 2em;
+  }
+}
+.beer-of-the-month-description {
+  font-size: 20px;
+  margin-bottom: 6em;
+}
+.beer-of-the-month-button-moreinfo {
+  margin-left: 50%;
+}
+.beer-of-the-month-allrights {
+  color: $mainDark;
+  text-align: center;
+  background: $mainYellow;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+@media only screen and (min-width: 990px) {
+  .beer-of-the-month-button-moreinfo {
+    margin-top: 4em;
+    font-size: 20px;
+  }
+  .beer-of-the-month-title {
+    font-size: 45px;
+  }
+  .beer-of-the-month-description {
+    margin-bottom: 2em;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 989px) {
+  .beer-of-the-month-description {
+    margin-bottom: 0.5em;
+  }
+  .beer-of-the-month-button-moreinfo {
+    margin-top: 3em;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 699px) {
+  .beer-of-the-month-img {
+    height: 110%;
+    top: -15%;
+  }
+  .beer-of-the-month-right {
+    margin-left: 40%;
+  }
+  .beer-of-the-month-title {
+    font-size: 30px;
+    margin-bottom: 1.5em;
+  }
+  .beer-of-the-month-button {
+    font-size: 0.7em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    .button {
+      margin-left: 0.5em;
+    }
+  }
+  .beer-of-the-month-description {
+    font-size: 15px;
+  }
+
+  .beer-of-the-month-button-moreinfo {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 499px) {
+  // .beer-of-the-month-container {
+  //   height: 27em;
+  // }
+  .beer-of-the-month-img {
+    height: 100%;
+  }
+  .beer-of-the-month-right {
+    margin-left: 45%;
+  }
+  .beer-of-the-month-title {
+    font-size: 23px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .beer-of-the-month-button {
+    font-size: 0.6em;
+    .button {
+      margin-left: 0.2em;
+    }
+  }
+  .beer-of-the-month-description {
+    font-size: 13px;
+    margin-top: 3em;
+  }
+  .beer-of-the-month-button-moreinfo {
+    margin-left: 45%;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .beer-of-the-month-container {
+    height: 29em;
+  }
+  .beer-of-the-month-img {
+    height: 90%;
+  }
+  .beer-of-the-month-right {
+    margin-left: 45%;
+  }
+  .beer-of-the-month-title {
+    font-size: 23px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .beer-of-the-month-button {
+    font-size: 0.6em;
+    .button {
+      margin-left: 0.2em;
+    }
+  }
+  .beer-of-the-month-description {
+    font-size: 13px;
+    margin-top: 3em;
+    margin-bottom: 5em;
+  }
+  .beer-of-the-month-button-moreinfo {
+    margin: auto;
+    text-align: center;
+  }
+}
