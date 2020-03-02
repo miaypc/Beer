@@ -5,18 +5,11 @@ import MainHeader from "../Components/MainHeader.js";
 import BeerOfTheMonth from "../Components/BeerOfTheMonth";
 import BeerExample from "../Components/Images/BeerExample.png";
 import styled, { keyframes } from "styled-components";
-import Footer from "../Components/Footer";
-import {
-  bounceInDown,
-  bounceInLeft,
-  bounceInRight,
-  bounceInUp
-} from "react-animations";
+import { bounceInDown, bounceInLeft, bounceInRight } from "react-animations";
 
 const bounceInDownAnimation = keyframes`${bounceInDown}`;
 const bounceInLeftAnimation = keyframes`${bounceInLeft}`;
 const bounceInRightAnimation = keyframes`${bounceInRight}`;
-const bounceInUpAnimation = keyframes`${bounceInUp}`;
 
 const BounceInDownDiv = styled.div`
   animation: 2.5s ${bounceInDownAnimation};
@@ -26,10 +19,6 @@ const BounceInLeftDiv = styled.div`
 `;
 const BounceInRrightDiv = styled.div`
   animation: 2s ${bounceInRightAnimation};
-`;
-
-const BounceInUpDiv = styled.div`
-  animation: 3s ${bounceInUpAnimation};
 `;
 
 function MainPage() {
