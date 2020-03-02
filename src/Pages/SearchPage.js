@@ -23,7 +23,10 @@ const SearchPage = () => {
       search === ""
         ? beers.slice(0, 3)
         : beers.filter(beer => {
-            return beer.description.toLowerCase().includes(search);
+            return (
+              beer.name.toLowerCase().includes(search) ||
+              beer.description.toLowerCase().includes(search)
+            );
           })
     );
   }, [search, beers]);
