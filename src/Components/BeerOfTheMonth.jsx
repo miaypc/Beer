@@ -36,7 +36,7 @@ function BeerOfTheMonth({ img, name, description }) {
         </div>
         <div className="beer-of-the-month-button-moreinfo">
           <Link
-            to="/beers/17"
+            to="/beers/14"
             style={{ textDecoration: "none", color: "#2d2d2d" }}
           >
             <Button

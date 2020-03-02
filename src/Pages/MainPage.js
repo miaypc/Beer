@@ -3,7 +3,7 @@ import "./MainPage.scss";
 import Navbar from "../Components/Navbar";
 import MainHeader from "../Components/MainHeader.js";
 import BeerOfTheMonth from "../Components/BeerOfTheMonth";
-import BeerExample from "../Components/Images/BeerExample.png";
+import BeerExample from "../Components/Images/beer14.png";
 import styled, { keyframes } from "styled-components";
 import { bounceInDown, bounceInLeft, bounceInRight } from "react-animations";
 
@@ -33,8 +33,8 @@ function MainPage() {
       <BounceInRrightDiv>
         <BeerOfTheMonth
           img={BeerExample}
-          name="Imperial Black Belgian Ale"
-          description="A widely available, sessionable craft beer style that showcases both malt and hops. Amber lagers are a medium-bodied lager with a toasty or caramel-like malt character."
+          name="Alpha Dog"
+          description="A fusion of caramel malt flavours and punchy New Zealand hops. A session beer you can get your teeth into."
         />
       </BounceInRrightDiv>
     </div>
