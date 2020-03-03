@@ -19,15 +19,16 @@ const SearchPage = () => {
   }, [query]);
 
   useEffect(() => {
+    throw new Error('lol');
     setFilteredBeers(
       search === ""
         ? beers.slice(0, 3)
         : beers.filter(beer => {
-            return (
-              beer.name.toLowerCase().includes(search) ||
-              beer.description.toLowerCase().includes(search)
-            );
-          })
+          return (
+            beer.name.toLowerCase().includes(search) ||
+            beer.description.toLowerCase().includes(search)
+          );
+        })
     );
   }, [search, beers]);
 
@@ -60,22 +61,22 @@ const SearchPage = () => {
         {loading ? (
           <h1>Loading ...</h1>
         ) : (
-          filteredBeers.map(beer => (
-            <Link
-              to={`/beers/${beer.id}`}
-              style={{ textDecoration: "none", color: "#2d2d2d" }}
-            >
-              <BeerCard
-                name={beer.name}
-                img={beer.image_url}
-                description={beer.description}
-                abv={beer.abv}
-                srm={beer.srm}
-                ibu={beer.ibu}
-              />
-            </Link>
-          ))
-        )}
+            filteredBeers.map(beer => (
+              <Link
+                to={`/beers/${beer.id}`}
+                style={{ textDecoration: "none", color: "#2d2d2d" }}
+              >
+                <BeerCard
+                  name={beer.name}
+                  img={beer.image_url}
+                  description={beer.description}
+                  abv={beer.abv}
+                  srm={beer.srm}
+                  ibu={beer.ibu}
+                />
+              </Link>
+            ))
+          )}
       </div>
       <Footer />
     </div>
