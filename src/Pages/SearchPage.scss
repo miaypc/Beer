@@ -3,3 +3,16 @@
 .search-page-container {
   background: $mainDark;
 }
+.search-page-loading-text {
+  font-size: 35px;
+  background: $mainGrey;
+  color: $mainDark;
+  margin: 0 auto;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+.search-page-loading-container {
+  text-align: center;
+  background: $mainGrey;
+  padding-bottom: 3em;
+}
