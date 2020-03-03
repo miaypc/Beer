@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,36 +11,39 @@ import MainPage from "./Pages/MainPage";
 import SearchPage from "./Pages/SearchPage";
 import ContactUsPage from "./Pages/ContactUsPage";
 import ErrorBoundary from "./Components/ErrorBoundary";
-import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <ErrorBoundary>
-          <Switch>
-            <Route path="/search">
+        <Switch>
+          <Route path="/search">
+            <ErrorBoundary>
               <SearchPage />
-            </Route>
-            <Route path="/beers/:beerId" component={OrderPage}></Route>
-            <Route path="/error" component={MainPage}></Route>
-            <Route path="/contact-us">
+            </ErrorBoundary>
+          </Route>
+          <Route path="/beers/:beerId" component={OrderPage}></Route>
+          <Route path="/contact-us">
+            <ErrorBoundary>
               <ContactUsPage />
-            </Route>
-            <Route path="/order">
+            </ErrorBoundary>
+          </Route>
+          <Route path="/order">
+            <ErrorBoundary>
               <OrderPage />
-            </Route>
-            <Route path="/" exact>
-              <MainPage />
-            </Route>
-            <Route path="*">
-              <Redirect to="/" />
-            </Route>
-          </Switch>
-        </ErrorBoundary>
+            </ErrorBoundary>
+          </Route>
+          <Route path="/" exact>
+            <MainPage />
+          </Route>
+          <Route path="*">
+            <Redirect to="/" />
+          </Route>
+
+
+        </Switch>
       </Router>
     </div>
   );
 }
-
 export default App;

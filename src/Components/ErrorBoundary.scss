@@ -1,0 +1,16 @@
+@import "../utils/colors.scss";
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  color: $mainYellow;
+  font-size: 3em;
+  padding-top: 3.2em;
+  height: 10em;
+  margin: 0em;
+  text-shadow: 0.2em;
+}
+.background {
+  background-color: $mainDark;
+  background-image: url(./Images/Group.svg);
+}

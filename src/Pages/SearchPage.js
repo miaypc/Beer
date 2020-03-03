@@ -19,7 +19,7 @@ const SearchPage = () => {
   }, [query]);
 
   useEffect(() => {
-    throw new Error('lol');
+
     setFilteredBeers(
       search === ""
         ? beers.slice(0, 3)
