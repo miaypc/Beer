@@ -5,6 +5,7 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { Link } from "react-router-dom";
 import "./SearchPage.scss";
+import DuckAnimation from "../Components/Duck";
 
 const SearchPage = () => {
   const [filteredBeers, setFilteredBeers] = useState([]);
@@ -37,11 +38,13 @@ const SearchPage = () => {
       .then(data => {
         setBeers(
           data.filter(
-            item => item.image_url !== "https://images.punkapi.com/v2/keg.png"
+            item =>
+              item.image_url !== "https://images.punkapi.com/v2/keg.png" &&
+              item.name !== "The End Of History"
           )
         );
       })
-      .then(setLoading(false));
+      .then(setTimeout(() => setLoading(false), 2500));
   };
   const updateSearch = event => {
     setSearch(event.target.value.toLowerCase());
@@ -58,7 +61,10 @@ const SearchPage = () => {
       <SearchBar onSearch={updateSearch} />
       <div className="search-page-container">
         {loading ? (
-          <h1>Loading ...</h1>
+          <div className="search-page-loading-container">
+            <p className="search-page-loading-text">Loading...</p>
+            <DuckAnimation />
+          </div>
         ) : (
           filteredBeers.map(beer => (
             <Link
@@ -77,6 +83,7 @@ const SearchPage = () => {
           ))
         )}
       </div>
+
       <Footer />
     </div>
   );
