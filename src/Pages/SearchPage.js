@@ -65,8 +65,6 @@ const SearchPage = () => {
   return (
     <div>
       <Navbar />
-      <SearchBar onSearch={updateSearch} />
-      <DiscreteSlider onChange={updateAbv} />
       <div className="search-page-container">
         {loading ? (
           <div className="search-page-loading-container">
@@ -74,21 +72,25 @@ const SearchPage = () => {
             <DuckAnimation />
           </div>
         ) : (
-          filteredBeers.map(beer => (
-            <Link
-              to={`/beers/${beer.id}`}
-              style={{ textDecoration: "none", color: "#2d2d2d" }}
-            >
-              <BeerCard
-                name={beer.name}
-                img={beer.image_url}
-                description={beer.description}
-                abv={beer.abv}
-                srm={beer.srm}
-                ibu={beer.ibu}
-              />
-            </Link>
-          ))
+          <>
+            <SearchBar onSearch={updateSearch} />
+            <DiscreteSlider onChange={updateAbv} />
+            {filteredBeers.map(beer => (
+              <Link
+                to={`/beers/${beer.id}`}
+                style={{ textDecoration: "none", color: "#2d2d2d" }}
+              >
+                <BeerCard
+                  name={beer.name}
+                  img={beer.image_url}
+                  description={beer.description}
+                  abv={beer.abv}
+                  srm={beer.srm}
+                  ibu={beer.ibu}
+                />
+              </Link>
+            ))}
+          </>
         )}
       </div>
 
