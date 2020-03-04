@@ -10,6 +10,7 @@ import OrderPage from "./Pages/OrderPage";
 import MainPage from "./Pages/MainPage";
 import SearchPage from "./Pages/SearchPage";
 import ContactUsPage from "./Pages/ContactUsPage";
+import ErrorBoundary from "./Components/ErrorBoundary";
 
 function App() {
   return (
@@ -17,14 +18,20 @@ function App() {
       <Router>
         <Switch>
           <Route path="/search">
-            <SearchPage />
+            <ErrorBoundary>
+              <SearchPage />
+            </ErrorBoundary>
           </Route>
           <Route path="/beers/:beerId" component={OrderPage}></Route>
           <Route path="/contact-us">
-            <ContactUsPage />
+            <ErrorBoundary>
+              <ContactUsPage />
+            </ErrorBoundary>
           </Route>
           <Route path="/order">
-            <OrderPage />
+            <ErrorBoundary>
+              <OrderPage />
+            </ErrorBoundary>
           </Route>
           <Route path="/" exact>
             <MainPage />
@@ -32,10 +39,11 @@ function App() {
           <Route path="*">
             <Redirect to="/" />
           </Route>
+
+
         </Switch>
       </Router>
     </div>
   );
 }
-
 export default App;

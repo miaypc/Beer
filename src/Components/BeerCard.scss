@@ -29,8 +29,6 @@
   }
   p {
     margin-bottom: 1.5em;
-    height: 200px;
-    overflow: scroll;
   }
 }
 .beercard-img {
@@ -50,9 +48,10 @@
   align-self: flex-end;
 }
 
-@media screen and(min-width: 1027px) {
+@media screen and (max-width: 900px) {
   .beercard-description {
-    margin-bottom: 2.5em;
+    height: 200px;
+    overflow: scroll;
   }
 }
 

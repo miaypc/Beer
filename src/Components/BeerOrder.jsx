@@ -42,12 +42,14 @@ function BeerOrder({ img, name, description, abv, ibu, srm }) {
         </div>
         <p className="beer-order-description">{description}</p>
         <div className="beer-order-button-moreinfo">
-          <Button
-            size="xl"
-            color={Colors.mainYellow}
-            textColor={Colors.mainDark}
-            name="Order"
-          />
+          <a href="https://www.amazon.de">
+            <Button
+              size="xl"
+              color={Colors.mainYellow}
+              textColor={Colors.mainDark}
+              name="Order"
+            />
+          </a>
         </div>
       </div>
     </div>

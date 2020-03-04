@@ -2,8 +2,8 @@ import React from "react";
 import AskUsAnthing from "../Components/AskUsAnything";
 import EmailUs from "../Components/EmailUs";
 import Location from "../Components/Location";
-import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 import "./ContactUsPage.scss";
 
