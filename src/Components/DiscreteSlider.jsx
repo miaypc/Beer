@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
 const marks = [
   {
     value: 0,
-    label: "Any"
+    label: "0"
   },
   {
     value: 5,
