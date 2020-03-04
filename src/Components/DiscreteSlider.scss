@@ -1,0 +1,35 @@
+@import "../utils/colors.scss";
+
+.sliderComponent {
+  background-color: $mainDark;
+  color: $mainYellow;
+  .MuiSlider-root {
+    color: white;
+  }
+  .slider {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .MuiSlider-markLabelActive {
+    color: $mainYellow;
+  }
+  .PrivateValueLabel-circle-214 {
+    color: $mainYellow;
+  }
+  .PrivateValueLabel-circle-129 {
+    background-color: none;
+    display: none;
+  }
+  .MuiSlider-track {
+    color: $mainYellow;
+  }
+  .MuiSlider-markLabel {
+    color: white;
+  }
+  .MuiSlider-rail {
+    height: 5px;
+  }
+  .MuiSlider-valueLabel {
+    display: none;
+  }
+}
